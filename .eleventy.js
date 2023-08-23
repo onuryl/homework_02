@@ -3,6 +3,8 @@ const sass = require("sass");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addTemplateFormats("scss");
+  eleventyConfig.addPassthroughCopy("assets/svg");
+  eleventyConfig.addPassthroughCopy("assets/arts");
 
   // Creates the extension for use
   eleventyConfig.addExtension("scss", {
